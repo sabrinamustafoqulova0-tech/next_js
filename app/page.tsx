@@ -2,17 +2,13 @@
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 
-export default function Navbar() {
-  const path = usePathname()
+
+
+export default function Home() {
 
   return (
-    <nav>
-      <Link
-        href="/"
-        style={{ fontWeight: path === '/' ? 'bold' : 'normal' }}
-      >
-        Главная
-      </Link>
-    </nav>
+    <div>
+      <h1>Home</h1>
+    </div>
   )
 }
