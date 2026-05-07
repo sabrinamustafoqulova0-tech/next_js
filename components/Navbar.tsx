@@ -10,7 +10,6 @@ export default function Navbar() {
     <nav style={{ display: 'flex', gap: '20px', padding: '16px 32px', borderBottom: '1px solid #eee' }}>
       
         <Link href={"/"}>Home</Link>
-        <Link href={"/about"}>About</Link>
         <Link href={"/contact"}>Contact</Link>
 
     </nav>
