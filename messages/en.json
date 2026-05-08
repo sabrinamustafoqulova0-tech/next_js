@@ -1,13 +1,13 @@
 {
   "HomePage": {
     "badge": "Handmade Collection 2026",
-    "title": "Мир Уютного Вязания",
-    "description": "Эксклюзивные изделия, созданные вручную. Мы превращаем качественную пряжу в теплые воспоминания и уют вашего дома.",
-    "contactBtn": "Связаться",
-    "catalogBtn": "Смотреть Каталог",
-    "faqTitle": "Популярные вопросы",
-    "aboutTitle": "Создано с душой, согрето заботой",
-    "statsHandmade": "Ручная работа",
-    "statsClients": "Довольных клиентов"
+    "title": "World of Cozy Knitting",
+    "description": "Exclusive handmade pieces. We transform premium yarn into warm memories and comfort for your home.",
+    "contactBtn": "Contact Us",
+    "catalogBtn": "View Catalog",
+    "faqTitle": "Frequently Asked Questions",
+    "aboutTitle": "Created with Soul, Warmed with Care",
+    "statsHandmade": "Handmade",
+    "statsClients": "Happy Clients"
   }
 }

@@ -7,11 +7,9 @@ export default function HomePage() {
 const t = useTranslations('HomePage');
   return (
     <main className="relative min-h-screen overflow-hidden bg-[#fffcfd] text-zinc-800 selection:bg-pink-100 selection:text-pink-600">
-      {/* Background Orbs */}
       <div className="absolute -left-20 -top-20 h-[500px] w-[500px] animate-pulse rounded-full bg-pink-200/20 blur-[100px]"></div>
       <div className="absolute -right-20 top-1/4 h-[400px] w-[400px] rounded-full bg-purple-200/20 blur-[120px]"></div>
-      <h1>{t('title')}</h1>;
-      {/* HERO SECTION */}
+      
       <section className="relative mx-auto flex max-w-7xl flex-col items-center px-6 py-28 text-center md:py-36">
         <div className="group mb-8 inline-flex items-center gap-2 rounded-full border border-pink-100 bg-white/40 px-4 py-1.5 shadow-sm backdrop-blur-md transition-all hover:bg-white/80">
           <Sparkles className="h-4 w-4 animate-spin-slow text-pink-500" />
@@ -44,7 +42,6 @@ const t = useTranslations('HomePage');
         </div>
       </section>
 
-      {/* NEW: GALLERY SECTION (Визуальный акцент) */}
       <section className="mx-auto max-w-7xl px-6 pb-24">
         <div className="flex items-center gap-4 mb-10">
            <Camera className="text-pink-400" />
@@ -52,7 +49,6 @@ const t = useTranslations('HomePage');
         </div>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
           <div className="h-64 rounded-[32px] bg-zinc-200 animate-pulse overflow-hidden group">
-             {/* Замени на <Image /> из next/image */}
              <div className="w-full h-full bg-gradient-to-tr from-pink-100 to-purple-100 transition-transform duration-700 group-hover:scale-110"></div>
           </div>
           <div className="h-64 mt-8 rounded-[32px] bg-zinc-200 animate-pulse overflow-hidden group">
@@ -67,7 +63,6 @@ const t = useTranslations('HomePage');
         </div>
       </section>
 
-      {/* ABOUT PROCESS SECTION */}
       <section className="mx-auto max-w-7xl px-6 py-24 border-t border-pink-50">
         <div className="flex flex-col gap-16 md:flex-row md:items-center">
           <div className="relative flex-1">
@@ -104,12 +99,10 @@ const t = useTranslations('HomePage');
         </div>
       </section>
 
-      {/* FAQ SECTION */}
       <section className="bg-zinc-50/50 py-24">
         <div className="mx-auto max-w-3xl px-6">
           <h2 className="mb-12 text-center text-4xl font-bold tracking-tight">{t('faqTitle')}</h2>
           <div className="space-y-4">
-             {/* Сюда можно также вынести вопросы в JSON, если их много */}
             <details className="group rounded-2xl bg-white p-6 shadow-sm transition-all hover:shadow-md">
               <summary className="flex cursor-pointer items-center justify-between font-bold text-zinc-800 list-none">
                 Как заказать?

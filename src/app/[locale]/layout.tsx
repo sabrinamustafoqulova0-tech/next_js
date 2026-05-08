@@ -1,4 +1,4 @@
-import { routing } from '@/i18n/routing';
+import { routing } from '@/src/i18n/routing';
 import Navbar from '../../../components/Navbar'
 import {hasLocale, NextIntlClientProvider} from 'next-intl';
 import { notFound } from 'next/navigation';
