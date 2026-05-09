@@ -31,7 +31,6 @@ export const todoApi = createApi({
         url: `/${id}`,
         method: 'DELETE',
       }),
-
       invalidatesTags: ['Todo'],
     }),
 
@@ -41,7 +40,6 @@ export const todoApi = createApi({
         method: 'PUT',
         body: user,
       }),
-
       invalidatesTags: ['Todo'],
     }),
 
