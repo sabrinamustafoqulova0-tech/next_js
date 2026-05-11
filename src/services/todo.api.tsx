@@ -14,6 +14,7 @@ export const todoApi = createApi({
   endpoints: (builder) => ({
     getTodo: builder.query<IData, null>({
       query: (name) => ``,
+      providesTags:['Todo']
     }),
 
     addTodo: builder.mutation({
@@ -56,6 +57,9 @@ export const todoApi = createApi({
 
       invalidatesTags: ['Todo'],
     }),
+    getTodoById: builder.query({
+  query: (id) => `/${id}`,
+}),
   }),
 })
 
@@ -65,4 +69,5 @@ export const {
   useDeleteTodoMutation,
   useEditTodoMutation,
   useCheckTodoMutation,
+  useGetTodoByIdQuery,
 } = todoApi

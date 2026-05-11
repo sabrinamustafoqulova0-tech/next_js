@@ -13,14 +13,15 @@ import {
 } from "../services/todo.api"
 
 import { IUsers } from "../services/todo.types"
+import Link from "next/link"
 
 export default function Home() {
   const { data, isLoading } = useGetTodoQuery()
 
-  const [addTodo] = useAddTodoMutation()
-  const [deleteTodo] = useDeleteTodoMutation()
-  const [editTodo] = useEditTodoMutation()
-  const [chekout] = useCheckTodoMutation()
+  const [addTodo, {data:data1,error:error1,isLoading:isLoading1}] = useAddTodoMutation()
+  const [deleteTodo, {data:data2,error:error2,isLoading:isLoading2}] = useDeleteTodoMutation()
+  const [editTodo, {data:data3,error:error3,isLoading:isLoading3}] = useEditTodoMutation()
+  const [chekout, {data:data4,error:error4,isLoading:isLoading4}] = useCheckTodoMutation()
 
   const [open, setOpen] = useState(false)
   const [editUser, setEditUser] = useState<IUsers | null>(null)
@@ -83,7 +84,6 @@ export default function Home() {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-100 to-slate-200 px-[100px] py-[40px]">
-      {/* TOP */}
       <div className="mb-10 flex items-center justify-between">
         <h1 className="text-[40px] font-bold text-gray-800">
           Users
@@ -97,7 +97,6 @@ export default function Home() {
         </button>
       </div>
 
-      {/* MODAL */}
       {open && (
         <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/50">
           <div className="w-[500px] rounded-[30px] bg-white p-8 shadow-2xl">
@@ -235,6 +234,16 @@ export default function Home() {
                     >
                       Edit
                     </button>
+
+
+                      <Link href={`/getbyid/${e.id}`}>
+                      <button
+                      className="rounded-full bg-gradient-to-r from-black to-[#444444c7] px-5 py-2 text-[14px] font-semibold text-white transition duration-300 hover:scale-105"
+                    >
+                      Info
+                    </button>
+                      </Link>
+                    
                   </div>
                 </div>
               </div>
