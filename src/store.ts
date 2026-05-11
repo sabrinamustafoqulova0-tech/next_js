@@ -1,14 +1,14 @@
 import { configureStore } from '@reduxjs/toolkit'
 // Or from '@reduxjs/toolkit/query/react'
 import { setupListeners } from '@reduxjs/toolkit/query'
-import { todoApi } from './app/services/todo.api'
+import { UserApi } from './app/services/users.api'
 
 export const store = configureStore({
   reducer: {
-    [todoApi.reducerPath]: todoApi.reducer,
+    [UserApi.reducerPath]: UserApi.reducer,
   },
   middleware: (getDefaultMiddleware) =>
-    getDefaultMiddleware().concat(todoApi.middleware),
+    getDefaultMiddleware().concat(UserApi.middleware),
 })
 
 
