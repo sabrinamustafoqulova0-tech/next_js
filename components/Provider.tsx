@@ -5,7 +5,7 @@ import { store } from '@/src/store'
 import React from 'react'
 import { Provider } from 'react-redux'
 
-const Providers = ({ children }: { children: React.ReactNode }) => {
+const Provid = ({ children }: { children: React.ReactNode }) => {
   return (
     <div>
     <Provider store={store}>
@@ -15,4 +15,4 @@ const Providers = ({ children }: { children: React.ReactNode }) => {
   )
 }
 
-export default Providers
+export default Provid
