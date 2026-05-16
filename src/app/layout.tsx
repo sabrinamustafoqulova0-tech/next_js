@@ -1,14 +1,11 @@
-import Providers from '@/components/Provider'
-import Navbar from '../../components/Navbar'
+import Navbar from '../../component/Navbar'
 
 export default function RootLayout({ children }) {
   return (
     <html>
       <body>
-        <Providers>
         <Navbar /> 
         {children}  
-        </Providers>
       </body>
     </html>
   )
